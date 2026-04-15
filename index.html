@@ -26,7 +26,7 @@
       --fd: 'Cormorant Garamond', serif;
       --fb: 'Outfit', sans-serif;
     }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; hyphens: none !important; }
     html { scroll-behavior: smooth; }
     body { background: var(--navy); color: var(--white); font-family: var(--fb); font-weight: 300; line-height: 1.7; overflow-x: hidden; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 48px; }
@@ -90,9 +90,9 @@
     /* SOBRE */
     .about { background:var(--cream); padding:140px 0; }
     .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center; }
-    .about h2 { font-family:var(--fd); font-size:clamp(36px,4vw,54px); font-weight:600; line-height:1.1; color:var(--text-dark); margin-bottom:28px; hyphens: none; }
+    .about h2 { font-family:var(--fd); font-size:clamp(36px,4vw,54px); font-weight:600; line-height:1.1; color:var(--text-dark); margin-bottom:28px; }
     .about h2 em { font-style:italic; color:var(--gold-dark); }
-    .about p { font-size:15px; color:var(--text-dark-2); margin-bottom:18px; line-height:1.9; hyphens: none; }
+    .about p { font-size:15px; color:var(--text-dark-2); margin-bottom:18px; line-height:1.9; }
     .about p strong { color:var(--text-dark); font-weight:600; }
     .manifesto { border-left:3px solid var(--gold-dark); padding:36px 44px; background:var(--cream-2); margin-bottom:12px; }
     .manifesto p { font-family:var(--fd); font-size:24px; font-style:italic; line-height:1.55; color:var(--text-dark); margin:0; }
@@ -300,16 +300,9 @@
         max-width: 100%;
       }
       
-      /* 2. Forçar quebra de palavras muito longas */
-      h1, h2, h3, p, .stat-number, .topic-n, .hero-h1 {
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        hyphens: auto;
-      }
-
-      /* Remover quebra com hífen na seção Sobre */
-      .about h2, .about p {
-        hyphens: none;
+      /* 2. Evitar quebra de palavras com hífen em todo o site */
+      * {
+        hyphens: none !important;
       }
 
       /* 3. Ajuste da Navbar para ficar lado a lado no mobile */
