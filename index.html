@@ -307,15 +307,24 @@
         hyphens: auto;
       }
 
-      /* 3. Ajuste da Navbar para evitar overflow horizontal */
+      /* 3. Ajuste da Navbar para ficar lado a lado no mobile */
       nav {
-        flex-direction: column;
-        gap: 16px;
-        padding: 16px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 20px;
+        gap: 10px;
+      }
+      .nav-logo {
+        font-size: 16px;
       }
       .nav-right {
-        width: 100%;
-        justify-content: center;
+        width: auto;
+      }
+      .nav-right .btn-outline {
+        padding: 10px 14px;
+        font-size: 9px;
+        letter-spacing: 1px;
+        width: auto;
       }
 
       /* 4. Ajuste de grids (Pilares continua 1fr, o resto muda conforme regras) */
@@ -391,6 +400,36 @@
         flex-direction: column;
         align-items: stretch;
         width: 100%;
+      }
+
+      /* 8. Ajuste Hero - Aumentar altura da foto */
+      .hero-right {
+        height: 120vw;
+      }
+
+      /* 9. Ajuste CTA Final (Rodapé) - 2 Colunas */
+      .cta-nums {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+      }
+      .cta-num {
+        padding: 24px 8px;
+        border-right: 1px solid rgba(201,168,76,.15);
+        border-bottom: 1px solid rgba(201,168,76,.15);
+      }
+      .cta-num:nth-child(even) {
+        border-right: none;
+      }
+      .cta-num:nth-child(3), .cta-num:nth-child(4) {
+        border-bottom: none;
+      }
+      .cta-num .lbl {
+        font-size: 9px;
+        letter-spacing: 2px;
+      }
+      .cta-num .val {
+        font-size: 16px;
       }
     }
   </style>
