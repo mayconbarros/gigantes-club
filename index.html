@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="referrer" content="no-referrer" />
   <title>GigantesClub — Ecossistema de Negócios</title>
   <link rel="icon" type="image/jpeg" href="favicon.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -301,7 +300,11 @@
         max-width: 100%;
       }
       
-      /* 2. Evitar quebra de palavras com hífen em todo o site */
+      /* 2. Evitar quebra de palavras com hífen em todo o site e manter word-wrap */
+      h1, h2, h3, p, .stat-number, .topic-n, .hero-h1 {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
       * {
         hyphens: none !important;
       }
@@ -469,7 +472,7 @@
 <section class="hero">
   <div class="hero-lines"></div>
   <div class="hero-left">
-    <a href="/" style="display: contents;"><img src="./logo.png" alt="Gigantes Club Logo" class="hero-logo-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://ecossitemadegigantes.com/wp-content/uploads/2026/03/logo-gigantes-club.png'"></a>
+    <a href="/" style="display: contents;"><img src="./logo.png" alt="Gigantes Club Logo" class="hero-logo-img" onerror="this.onerror=null; this.src='https://ecossitemadegigantes.com/wp-content/uploads/2026/03/logo-gigantes-club.png'"></a>
     <div class="hero-logo-tagline">Ecossistema de Negócios · Criciúma – SC</div>
     <div class="hero-divider"></div>
     <h1 class="hero-h1">Onde empresários<br>comuns deixam<br><em>de existir.</em></h1>
@@ -564,16 +567,16 @@
       <p>Parceiros estratégicos que fazem parte do ecossistema GigantesClub.</p>
     </div>
     <div class="partners-grid">
-      <div class="partner-card"><div class="partner-name"><img src="logo-librelato.png" alt="Librelato" class="partner-logo-img" referrerpolicy="no-referrer"></div><div class="partner-seg">Indústria</div></div>
-      <div class="partner-card"><div class="partner-name"><img src="logo-rampinelli.png" alt="Rampinelli" class="partner-logo-rampinelli" referrerpolicy="no-referrer"></div><div class="partner-seg">Alimentos</div></div>
-      <div class="partner-card"><div class="partner-name"><img src="giassi.png" alt="Giassi" class="partner-logo-rampinelli" referrerpolicy="no-referrer"></div><div class="partner-seg">Supermercados</div></div>
-      <div class="partner-card"><div class="partner-name"><img src="cristalcopo.png" alt="Cristalcopo" class="partner-logo-rampinelli" referrerpolicy="no-referrer"></div><div class="partner-seg">Indústria</div></div>
+      <div class="partner-card"><div class="partner-name"><img src="logo-librelato.png" alt="Librelato" class="partner-logo-img"></div><div class="partner-seg">Indústria</div></div>
+      <div class="partner-card"><div class="partner-name"><img src="logo-rampinelli.png" alt="Rampinelli" class="partner-logo-rampinelli"></div><div class="partner-seg">Alimentos</div></div>
+      <div class="partner-card"><div class="partner-name"><img src="giassi.png" alt="Giassi" class="partner-logo-rampinelli"></div><div class="partner-seg">Supermercados</div></div>
+      <div class="partner-card"><div class="partner-name"><img src="cristalcopo.png" alt="Cristalcopo" class="partner-logo-rampinelli"></div><div class="partner-seg">Indústria</div></div>
     </div>
     <div class="partners-row2">
-      <div class="partner-card"><div class="partner-name"><img src="baly.png" alt="Baly" class="partner-logo-rampinelli" referrerpolicy="no-referrer"></div><div class="partner-seg">Energéticos</div></div>
-      <div class="partner-card"><div class="partner-name"><img src="destak.png" alt="Destak" class="partner-logo-rampinelli" referrerpolicy="no-referrer"></div><div class="partner-seg">Transportes</div></div>
-      <div class="partner-card"><div class="partner-name"><img src="coopercocal.png" alt="Coopercocal" class="partner-logo-rampinelli" referrerpolicy="no-referrer"></div><div class="partner-seg">Cooperativa</div></div>
-      <div class="partner-card"><div class="partner-name"><img src="criciuma-ec.png" alt="Criciúma EC" class="partner-logo-rampinelli" referrerpolicy="no-referrer"></div><div class="partner-seg">Futebol Clube</div></div>
+      <div class="partner-card"><div class="partner-name"><img src="baly.png" alt="Baly" class="partner-logo-rampinelli"></div><div class="partner-seg">Energéticos</div></div>
+      <div class="partner-card"><div class="partner-name"><img src="destak.png" alt="Destak" class="partner-logo-rampinelli"></div><div class="partner-seg">Transportes</div></div>
+      <div class="partner-card"><div class="partner-name"><img src="coopercocal.png" alt="Coopercocal" class="partner-logo-rampinelli"></div><div class="partner-seg">Cooperativa</div></div>
+      <div class="partner-card"><div class="partner-name"><img src="criciuma-ec.png" alt="Criciúma EC" class="partner-logo-rampinelli"></div><div class="partner-seg">Futebol Clube</div></div>
     </div>
   </div>
 </section>
@@ -642,16 +645,16 @@
 <!-- GALERIA -->
 <section class="gallery">
   <div class="gallery-track">
-    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/1-1.jpg" alt="GigantesClub" referrerpolicy="no-referrer"></div>
-    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/2-1.jpg" alt="GigantesClub" referrerpolicy="no-referrer"></div>
-    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/3-1.jpg" alt="GigantesClub" referrerpolicy="no-referrer"></div>
-    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/4-1.jpg" alt="GigantesClub" referrerpolicy="no-referrer"></div>
-    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/5-1.jpg" alt="GigantesClub" referrerpolicy="no-referrer"></div>
-    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/1-1.jpg" alt="GigantesClub" referrerpolicy="no-referrer"></div>
-    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/2-1.jpg" alt="GigantesClub" referrerpolicy="no-referrer"></div>
-    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/3-1.jpg" alt="GigantesClub" referrerpolicy="no-referrer"></div>
-    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/4-1.jpg" alt="GigantesClub" referrerpolicy="no-referrer"></div>
-    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/5-1.jpg" alt="GigantesClub" referrerpolicy="no-referrer"></div>
+    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/1-1.jpg" alt="GigantesClub"></div>
+    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/2-1.jpg" alt="GigantesClub"></div>
+    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/3-1.jpg" alt="GigantesClub"></div>
+    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/4-1.jpg" alt="GigantesClub"></div>
+    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/5-1.jpg" alt="GigantesClub"></div>
+    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/1-1.jpg" alt="GigantesClub"></div>
+    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/2-1.jpg" alt="GigantesClub"></div>
+    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/3-1.jpg" alt="GigantesClub"></div>
+    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/4-1.jpg" alt="GigantesClub"></div>
+    <div class="gallery-item"><img src="https://ecossitemadegigantes.com/wp-content/uploads/2026/03/5-1.jpg" alt="GigantesClub"></div>
   </div>
 </section>
 
@@ -709,7 +712,7 @@
 <!-- CTA FINAL -->
 <section class="cta-final">
   <div class="container">
-    <a href="/" style="display: contents;"><img src="./logo.png" alt="GigantesClub" class="cta-logo-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://ecossitemadegigantes.com/wp-content/uploads/2026/03/logo-gigantes-club.png'"></a>
+    <a href="/" style="display: contents;"><img src="./logo.png" alt="GigantesClub" class="cta-logo-img" onerror="this.onerror=null; this.src='https://ecossitemadegigantes.com/wp-content/uploads/2026/03/logo-gigantes-club.png'"></a>
     <h2>Evolução exige <em>ambiente.</em></h2>
     <p>Cada novo membro passa por curadoria. Vagas limitadas.<br>O GigantesClub não cresce por volume. Cresce por alinhamento.</p>
     <a href="https://wa.me/5548999264896" class="btn-primary" target="_blank" style="position:relative;z-index:2">Solicitar Aplicação</a>
