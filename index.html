@@ -90,9 +90,9 @@
     /* SOBRE */
     .about { background:var(--cream); padding:140px 0; }
     .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center; }
-    .about h2 { font-family:var(--fd); font-size:clamp(36px,4vw,54px); font-weight:600; line-height:1.1; color:var(--text-dark); margin-bottom:28px; }
+    .about h2 { font-family:var(--fd); font-size:clamp(36px,4vw,54px); font-weight:600; line-height:1.1; color:var(--text-dark); margin-bottom:28px; hyphens: none; }
     .about h2 em { font-style:italic; color:var(--gold-dark); }
-    .about p { font-size:15px; color:var(--text-dark-2); margin-bottom:18px; line-height:1.9; }
+    .about p { font-size:15px; color:var(--text-dark-2); margin-bottom:18px; line-height:1.9; hyphens: none; }
     .about p strong { color:var(--text-dark); font-weight:600; }
     .manifesto { border-left:3px solid var(--gold-dark); padding:36px 44px; background:var(--cream-2); margin-bottom:12px; }
     .manifesto p { font-family:var(--fd); font-size:24px; font-style:italic; line-height:1.55; color:var(--text-dark); margin:0; }
@@ -305,6 +305,11 @@
         word-wrap: break-word;
         overflow-wrap: break-word;
         hyphens: auto;
+      }
+
+      /* Remover quebra com hífen na seção Sobre */
+      .about h2, .about p {
+        hyphens: none;
       }
 
       /* 3. Ajuste da Navbar para ficar lado a lado no mobile */
@@ -546,7 +551,7 @@
       <div class="member-card"><div class="member-name">Eraldo Rosa</div><div class="member-company">Eraldo Construções</div><div class="member-role">Construção Civil</div></div>
       <div class="member-card"><div class="member-name">Samuel Baldissera</div><div class="member-company">Baldissera Empreendimentos</div><div class="member-role">Empreendimentos Imobiliários</div></div>
       <div class="member-card"><div class="member-name">Eduardo Serafim</div><div class="member-company">Construfase</div><div class="member-role">Construção Civil</div></div>
-      <div class="member-card"><div class="member-name">Dr. Max Rego</div><div class="member-company">Max Amaral Wise Viagens</div><div class="member-role">Turismo & Saúde</div></div>
+      <div class="member-card"><div class="member-name">Dr. Max Rego</div><div class="member-company">Saúde e Performance para Empresários</div><div class="member-role">Área da Saúde</div></div>
       <div class="member-card"><div class="member-name">Luiz Henrique</div><div class="member-company">Safra Investe</div><div class="member-role">Investimentos</div></div>
       <div class="member-card"><div class="member-name">Dr. Eduardo Martins</div><div class="member-company">Medicina</div><div class="member-role">Área da Saúde</div></div>
     </div>
